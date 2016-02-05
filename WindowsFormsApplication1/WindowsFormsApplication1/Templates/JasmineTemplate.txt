@@ -1,0 +1,60 @@
+//Place Holders
+//{0} - factory name
+//{1} - response mock array
+//{2} - validation function
+//{3} - Factory init method
+//{4} - Jasmine Its collection
+//{5} - Validate all methods defined in a factory
+define(['angular', 'angular-mock'], function() {
+	
+	 describe('{0}', function() {
+		 
+		 var appConfig, appUtil;
+		 //Mocking the data
+	     var responseMock =[ {1}];
+		 var itemToBeValidated={2};
+		 var factoryInitMethod={3}
+		 var jasmineIts=[{4}}];
+		  	// executed before each "it" is run.
+	        beforeEach(function() {
+	            // load the module.
+	            module('he');
+	        });
+	        
+	        beforeEach(inject(function() {
+	            var $injector = angular.injector(['ngMock', 'ng', 'he']);
+	            basicLineFactory = $injector.get({0});
+	            appConfig = $injector.get('appConfig');
+	            appUtil = $injector.get('appUtil');
+	        }));
+			
+			//Validate all methods defined in a factory
+			{5}
+			
+			//this function will be used for validating
+	        function validate(lineItem) {
+	            var errorList = [];
+	            var screenName = "";
+	            itemToBeValidated(screenName, errorList);
+	            return errorList;
+	        }
+			
+	
+		 describe({0}+' Validation', function() {
+			var lineItem;
+
+			beforeEach(function() {                
+				lineItem = factoryInitMethod(responseMock);
+			});
+			function dynamicItMethods(itDescription,actualItem,expectedItem){
+				it(itDescription, function() {
+				expect(actualItem).toEqual(expectedItem)
+				});
+			}
+			for(int i=0; i< jasmineIts.length; i++){
+				dynamicItMethods(jasmineIts.itDescription,jasmineIts.actualItem,jasmineIts.expectedItem);
+				
+			}
+		}
+	 }
+}

@@ -1,0 +1,11 @@
+﻿define(['../module'], function(factoryModule) {3}
+
+    'use strict';
+factoryModule.factory.factory({0}, [{1}{5} function ({1}) {3}
+	
+
+	{2}
+
+
+{4}]);
+{4});
