@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{345CA6DB-2F60-48C9-93E6-97698426062D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AngularUtilities</RootNamespace>
+    <AssemblyName>AngularUtilities</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>angular.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net35\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAUnit.Designer.cs">
+      <DependentUpon>frmAUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAngularFactories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAngularFactories.Designer.cs">
+      <DependentUpon>frmAngularFactories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJasmine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJasmine.Designer.cs">
+      <DependentUpon>frmJasmine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="JsonFactory.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TreeViewSchema.cs" />
+    <None Include="Html\CallToJavascript.html" />
+    <Content Include="angular.ico" />
+    <Content Include="Images\angular.ico" />
+    <None Include="Javascript\getAllMethods.js" />
+    <Content Include="Templates\FactoryTemplate.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\JasmineTemplate.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="frmAUnit.resx">
+      <DependentUpon>frmAUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAngularFactories.resx">
+      <DependentUpon>frmAngularFactories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJasmine.resx">
+      <DependentUpon>frmJasmine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Node Modules\js-beautify\js-beautify.cmd" />
+    <None Include="Node Modules\js-beautify\js\config\defaults.json" />
+    <None Include="Node Modules\js-beautify\js\test\resources\configerror\.jsbeautifyrc" />
+    <None Include="Node Modules\js-beautify\js\test\resources\indent11chars\.jsbeautifyrc" />
+    <None Include="Node Modules\js-beautify\js\test\run-tests" />
+    <None Include="Node Modules\js-beautify\js\test\shell-smoke-test.sh" />
+    <None Include="Node Modules\js-beautify\node_modules\.bin\mkdirp" />
+    <None Include="Node Modules\js-beautify\node_modules\.bin\mkdirp.cmd" />
+    <None Include="Node Modules\js-beautify\node_modules\.bin\nopt" />
+    <None Include="Node Modules\js-beautify\node_modules\.bin\nopt.cmd" />
+    <None Include="Node Modules\js-beautify\node_modules\config-chain\.npmignore" />
+    <None Include="Node Modules\js-beautify\node_modules\config-chain\LICENCE" />
+    <None Include="Node Modules\js-beautify\node_modules\config-chain\node_modules\ini\LICENSE" />
+    <None Include="Node Modules\js-beautify\node_modules\config-chain\node_modules\ini\package.json" />
+    <None Include="Node Modules\js-beautify\node_modules\config-chain\node_modules\ini\README.md" />
+    <None Include="Node Modules\js-beautify\node_modules\config-chain\node_modules\proto-list\LICENSE" />
+    <None Include="Node Modules\js-beautify\node_modules\config-chain\node_modules\proto-list\package.json" />
+    <None Include="Node Modules\js-beautify\node_modules\config-chain\node_modules\proto-list\README.md" />
+    <None Include="Node Modules\js-beautify\node_modules\config-chain\package.json" />
+    <None Include="Node Modules\js-beautify\node_modules\config-chain\readme.markdown" />
+    <None Include="Node Modules\js-beautify\node_modules\config-chain\test\broken.json" />
+    <None Include="Node Modules\js-beautify\node_modules\mkdirp\.travis.yml" />
+    <None Include="Node Modules\js-beautify\node_modules\mkdirp\LICENSE" />
+    <None Include="Node Modules\js-beautify\node_modules\mkdirp\node_modules\minimist\.travis.yml" />
+    <None Include="Node Modules\js-beautify\node_modules\mkdirp\node_modules\minimist\LICENSE" />
+    <None Include="Node Modules\js-beautify\node_modules\mkdirp\node_modules\minimist\package.json" />
+    <None Include="Node Modules\js-beautify\node_modules\mkdirp\node_modules\minimist\readme.markdown" />
+    <None Include="Node Modules\js-beautify\node_modules\mkdirp\package.json" />
+    <None Include="Node Modules\js-beautify\node_modules\mkdirp\readme.markdown" />
+    <None Include="Node Modules\js-beautify\node_modules\nopt\.npmignore" />
+    <None Include="Node Modules\js-beautify\node_modules\nopt\.travis.yml" />
+    <None Include="Node Modules\js-beautify\node_modules\nopt\LICENSE" />
+    <None Include="Node Modules\js-beautify\node_modules\nopt\node_modules\abbrev\.npmignore" />
+    <None Include="Node Modules\js-beautify\node_modules\nopt\node_modules\abbrev\.travis.yml" />
+    <None Include="Node Modules\js-beautify\node_modules\nopt\node_modules\abbrev\CONTRIBUTING.md" />
+    <None Include="Node Modules\js-beautify\node_modules\nopt\node_modules\abbrev\LICENSE" />
+    <None Include="Node Modules\js-beautify\node_modules\nopt\node_modules\abbrev\package.json" />
+    <None Include="Node Modules\js-beautify\node_modules\nopt\node_modules\abbrev\README.md" />
+    <None Include="Node Modules\js-beautify\node_modules\nopt\package.json" />
+    <None Include="Node Modules\js-beautify\node_modules\nopt\README.md" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>robocopy "$(ProjectDir)Node Modules"  "$(TargetDir)Node Modules" /E</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
