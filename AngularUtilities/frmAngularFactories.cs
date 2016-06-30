@@ -11,7 +11,7 @@ namespace WindowsFormsApplication1
     public partial class frmAngularFactories : Form
     {
         DataTable dt =new DataTable();
-       
+        string dquotes = @"""";
          public frmAngularFactories()
          {
              InitializeComponent();
@@ -294,7 +294,7 @@ namespace WindowsFormsApplication1
                     progressBar1.Value = pbarValue;
                     pbarValue++;
                     
-                    ps.Arguments = string.Format(@"/c {0}Node Modules\js-beautify\js-beautify.cmd  -o {1}", AppDomain.CurrentDomain.BaseDirectory, factoryFileName);
+                    ps.Arguments = string.Format(@"{2}/c {0}NodeModules\js-beautify\js-beautify.cmd  -o {1}{2}", AppDomain.CurrentDomain.BaseDirectory, factoryFileName,dquotes);
 
                     try
                     {

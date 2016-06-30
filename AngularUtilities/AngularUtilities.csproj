@@ -125,46 +125,46 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Node Modules\js-beautify\js-beautify.cmd" />
-    <None Include="Node Modules\js-beautify\js\config\defaults.json" />
-    <None Include="Node Modules\js-beautify\js\test\resources\configerror\.jsbeautifyrc" />
-    <None Include="Node Modules\js-beautify\js\test\resources\indent11chars\.jsbeautifyrc" />
-    <None Include="Node Modules\js-beautify\js\test\run-tests" />
-    <None Include="Node Modules\js-beautify\js\test\shell-smoke-test.sh" />
-    <None Include="Node Modules\js-beautify\node_modules\.bin\mkdirp" />
-    <None Include="Node Modules\js-beautify\node_modules\.bin\mkdirp.cmd" />
-    <None Include="Node Modules\js-beautify\node_modules\.bin\nopt" />
-    <None Include="Node Modules\js-beautify\node_modules\.bin\nopt.cmd" />
-    <None Include="Node Modules\js-beautify\node_modules\config-chain\.npmignore" />
-    <None Include="Node Modules\js-beautify\node_modules\config-chain\LICENCE" />
-    <None Include="Node Modules\js-beautify\node_modules\config-chain\node_modules\ini\LICENSE" />
-    <None Include="Node Modules\js-beautify\node_modules\config-chain\node_modules\ini\package.json" />
-    <None Include="Node Modules\js-beautify\node_modules\config-chain\node_modules\ini\README.md" />
-    <None Include="Node Modules\js-beautify\node_modules\config-chain\node_modules\proto-list\LICENSE" />
-    <None Include="Node Modules\js-beautify\node_modules\config-chain\node_modules\proto-list\package.json" />
-    <None Include="Node Modules\js-beautify\node_modules\config-chain\node_modules\proto-list\README.md" />
-    <None Include="Node Modules\js-beautify\node_modules\config-chain\package.json" />
-    <None Include="Node Modules\js-beautify\node_modules\config-chain\readme.markdown" />
-    <None Include="Node Modules\js-beautify\node_modules\config-chain\test\broken.json" />
-    <None Include="Node Modules\js-beautify\node_modules\mkdirp\.travis.yml" />
-    <None Include="Node Modules\js-beautify\node_modules\mkdirp\LICENSE" />
-    <None Include="Node Modules\js-beautify\node_modules\mkdirp\node_modules\minimist\.travis.yml" />
-    <None Include="Node Modules\js-beautify\node_modules\mkdirp\node_modules\minimist\LICENSE" />
-    <None Include="Node Modules\js-beautify\node_modules\mkdirp\node_modules\minimist\package.json" />
-    <None Include="Node Modules\js-beautify\node_modules\mkdirp\node_modules\minimist\readme.markdown" />
-    <None Include="Node Modules\js-beautify\node_modules\mkdirp\package.json" />
-    <None Include="Node Modules\js-beautify\node_modules\mkdirp\readme.markdown" />
-    <None Include="Node Modules\js-beautify\node_modules\nopt\.npmignore" />
-    <None Include="Node Modules\js-beautify\node_modules\nopt\.travis.yml" />
-    <None Include="Node Modules\js-beautify\node_modules\nopt\LICENSE" />
-    <None Include="Node Modules\js-beautify\node_modules\nopt\node_modules\abbrev\.npmignore" />
-    <None Include="Node Modules\js-beautify\node_modules\nopt\node_modules\abbrev\.travis.yml" />
-    <None Include="Node Modules\js-beautify\node_modules\nopt\node_modules\abbrev\CONTRIBUTING.md" />
-    <None Include="Node Modules\js-beautify\node_modules\nopt\node_modules\abbrev\LICENSE" />
-    <None Include="Node Modules\js-beautify\node_modules\nopt\node_modules\abbrev\package.json" />
-    <None Include="Node Modules\js-beautify\node_modules\nopt\node_modules\abbrev\README.md" />
-    <None Include="Node Modules\js-beautify\node_modules\nopt\package.json" />
-    <None Include="Node Modules\js-beautify\node_modules\nopt\README.md" />
+    <None Include="NodeModules\js-beautify\js-beautify.cmd" />
+    <None Include="NodeModules\js-beautify\js\config\defaults.json" />
+    <None Include="NodeModules\js-beautify\js\test\resources\configerror\.jsbeautifyrc" />
+    <None Include="NodeModules\js-beautify\js\test\resources\indent11chars\.jsbeautifyrc" />
+    <None Include="NodeModules\js-beautify\js\test\run-tests" />
+    <None Include="NodeModules\js-beautify\js\test\shell-smoke-test.sh" />
+    <None Include="NodeModules\js-beautify\node_modules\.bin\mkdirp" />
+    <None Include="NodeModules\js-beautify\node_modules\.bin\mkdirp.cmd" />
+    <None Include="NodeModules\js-beautify\node_modules\.bin\nopt" />
+    <None Include="NodeModules\js-beautify\node_modules\.bin\nopt.cmd" />
+    <None Include="NodeModules\js-beautify\node_modules\config-chain\.npmignore" />
+    <None Include="NodeModules\js-beautify\node_modules\config-chain\LICENCE" />
+    <None Include="NodeModules\js-beautify\node_modules\config-chain\node_modules\ini\LICENSE" />
+    <None Include="NodeModules\js-beautify\node_modules\config-chain\node_modules\ini\package.json" />
+    <None Include="NodeModules\js-beautify\node_modules\config-chain\node_modules\ini\README.md" />
+    <None Include="NodeModules\js-beautify\node_modules\config-chain\node_modules\proto-list\LICENSE" />
+    <None Include="NodeModules\js-beautify\node_modules\config-chain\node_modules\proto-list\package.json" />
+    <None Include="NodeModules\js-beautify\node_modules\config-chain\node_modules\proto-list\README.md" />
+    <None Include="NodeModules\js-beautify\node_modules\config-chain\package.json" />
+    <None Include="NodeModules\js-beautify\node_modules\config-chain\readme.markdown" />
+    <None Include="NodeModules\js-beautify\node_modules\config-chain\test\broken.json" />
+    <None Include="NodeModules\js-beautify\node_modules\mkdirp\.travis.yml" />
+    <None Include="NodeModules\js-beautify\node_modules\mkdirp\LICENSE" />
+    <None Include="NodeModules\js-beautify\node_modules\mkdirp\node_modules\minimist\.travis.yml" />
+    <None Include="NodeModules\js-beautify\node_modules\mkdirp\node_modules\minimist\LICENSE" />
+    <None Include="NodeModules\js-beautify\node_modules\mkdirp\node_modules\minimist\package.json" />
+    <None Include="NodeModules\js-beautify\node_modules\mkdirp\node_modules\minimist\readme.markdown" />
+    <None Include="NodeModules\js-beautify\node_modules\mkdirp\package.json" />
+    <None Include="NodeModules\js-beautify\node_modules\mkdirp\readme.markdown" />
+    <None Include="NodeModules\js-beautify\node_modules\nopt\.npmignore" />
+    <None Include="NodeModules\js-beautify\node_modules\nopt\.travis.yml" />
+    <None Include="NodeModules\js-beautify\node_modules\nopt\LICENSE" />
+    <None Include="NodeModules\js-beautify\node_modules\nopt\node_modules\abbrev\.npmignore" />
+    <None Include="NodeModules\js-beautify\node_modules\nopt\node_modules\abbrev\.travis.yml" />
+    <None Include="NodeModules\js-beautify\node_modules\nopt\node_modules\abbrev\CONTRIBUTING.md" />
+    <None Include="NodeModules\js-beautify\node_modules\nopt\node_modules\abbrev\LICENSE" />
+    <None Include="NodeModules\js-beautify\node_modules\nopt\node_modules\abbrev\package.json" />
+    <None Include="NodeModules\js-beautify\node_modules\nopt\node_modules\abbrev\README.md" />
+    <None Include="NodeModules\js-beautify\node_modules\nopt\package.json" />
+    <None Include="NodeModules\js-beautify\node_modules\nopt\README.md" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -202,7 +202,8 @@
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>robocopy "$(ProjectDir)Node Modules"  "$(TargetDir)Node Modules" /E</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
